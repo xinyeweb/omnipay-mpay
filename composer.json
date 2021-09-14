@@ -1,0 +1,33 @@
+{
+    "name": "xinyeweb/omnipay-mpay",
+    "type": "library",
+    "description": "mpay gateway for Omnipay payment processing library",
+    "keywords": [
+      "mpay",
+      "gateway",
+      "php",
+      "omnipay",
+      "pay",
+      "sdk",
+      "app",
+      "payment",
+      "purchase"
+    ],
+    "homepage": "https://github.com/xinyeweb/omnipay-mpay",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Loki Else",
+        "email": "htmail.zhang@gmail.com"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Omnipay\\MPay\\": "src/"
+      }
+    },
+    "require": {
+      "omnipay/common": "^3.0",
+      "php-http/guzzle6-adapter": "*"
+    }
+  }
