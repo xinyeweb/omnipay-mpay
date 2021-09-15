@@ -1,21 +1,27 @@
 {
     "name": "xinyeweb/omnipay-mpay",
-    "description": "yii2-mpay",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","mpay"],
-    "license": "BSD-3-Clause",
+    "type": "library",
+    "description": "mpay",
+    "keywords": [
+        "yii2",
+        "extension",
+        "mpay"
+    ],
+    "homepage": "https://github.com/xinyeweb/omnipay-mpay",
+    "license": "MIT",
     "authors": [
         {
             "name": "hunter.zhang",
-            "email": "htmail.zhang@gmail.com"
+            "email": "htmail.zhang@gmail.com",
+            "homepage": "https://github.com/xinyeweb/omnipay-mpay"
         }
     ],
     "autoload": {
-      "psr-4": {
-        "Omnipay\\MPay\\": "src/"
-      }
+        "psr-4": {
+            "Omnipay\\MPay\\": "src/"
+        }
     },
     "require": {
-      "yiisoft/yii2": "~2.0.0"
+        "omnipay/common": "~3.0.0"
     }
 }
