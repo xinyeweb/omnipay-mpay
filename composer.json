@@ -16,8 +16,6 @@
       }
     },
     "require": {
-      "yiisoft/yii2": "~2.0.0",
-      "omnipay/common": "^3.0",
-      "php-http/guzzle6-adapter": "*"
+      "yiisoft/yii2": "~2.0.0"
     }
 }
