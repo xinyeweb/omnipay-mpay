@@ -1,13 +1,14 @@
 <?php
 
 namespace Omnipay\MPay\Common;
+
 /**
  * MD5工具類
  */
 class MD5
 {
 
-    
+
     /**
      * MD5簽名
      */
@@ -31,5 +32,3 @@ class MD5
         }
     }
 }
-
-

@@ -1,31 +1,16 @@
-yii2-mpay
-=========
-yii2-mpay
 
-Installation
-------------
+$orderParams 订单参数
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+PcGateway
+$gateway = Omnipay::create($type);
+//设置通用配置
+$gateway->setParams()
 
-Either run
-
-```
-php composer.phar require --prefer-dist xinyeweb/omnipay-mpay "*"
-```
-
-or add
-
-```
-"xinyeweb/omnipay-mpay": "*"
-```
-
-to the require section of your `composer.json` file.
+PcGateway parameters 为请求参数
+public function precreate_online(array $parameters = [])
+{
+    return $this->createRequest(PcRequest::class, $parameters);
+}
 
 
-Usage
------
 
-Once the extension is installed, simply use it in your code by  :
-
-```php
-<?= \Omnipay\MPay\AutoloadExample::widget(); ?>```
