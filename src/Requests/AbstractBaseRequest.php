@@ -11,10 +11,10 @@ abstract class AbstractBaseRequest extends AbstractRequest
 {
     //POST請求URL【需要更新】
     protected $curlUrl = "https://uatopenapi.macaupay.com.mo/masl/umpg/gateway";
-    protected $curlUrlProd = "https://uatopenapi.macaupay.com.mo/masl/umpg/gateway";
+    protected $curlUrlProd = "https://openapi.macaupay.com.mo/masl/umpg/gateway";
     //表單請求URL【需要更新】
     protected $formUrl = "https://uatopenapi.macaupay.com.mo/scanpay/";
-    protected $formUrlProd = "https://uatopenapi.macaupay.com.mo/scanpay/";
+    protected $formUrlProd = "https://openapi.macaupay.com.mo/scanpay/v2/";
     //MD5加密的key【需要更新】    
     protected $MD5Key;
     //私鑰證書地址【需要在構造函數更新】
