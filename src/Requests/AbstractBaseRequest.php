@@ -11,8 +11,10 @@ abstract class AbstractBaseRequest extends AbstractRequest
 {
     //POST請求URL【需要更新】
     protected $curlUrl = "https://uatopenapi.macaupay.com.mo/masl/umpg/gateway";
+    protected $curlUrlProd = "https://uatopenapi.macaupay.com.mo/masl/umpg/gateway";
     //表單請求URL【需要更新】
     protected $formUrl = "https://uatopenapi.macaupay.com.mo/scanpay/";
+    protected $formUrlProd = "https://uatopenapi.macaupay.com.mo/scanpay/";
     //MD5加密的key【需要更新】    
     protected $MD5Key;
     //私鑰證書地址【需要在構造函數更新】
@@ -30,20 +32,20 @@ abstract class AbstractBaseRequest extends AbstractRequest
 
     public function setCurlUrl()
     {
-        return $this->setParameter("curl_url", $this->url);
+        return $this->setParameter("curl_url", YII_ENV_PROD ? $this->curlUrlProd : $this->curlUrl);
     }
     public function getCurlUrl()
     {
-        return $this->curlUrl;
+        return YII_ENV_PROD ? $this->curlUrlProd : $this->curlUrl;
     }
 
     public function setFormUrl()
     {
-        return $this->setParameter("form_url", $this->formUrl);
+        return $this->setParameter("form_url", YII_ENV_PROD ? $this->formUrlProd :  $this->formUrl);
     }
     public function getFormUrl()
     {
-        return $this->formUrl;
+        return YII_ENV_PROD ? $this->formUrlProd : $this->formUrl;
     }
 
     public function setOrgId($value)
