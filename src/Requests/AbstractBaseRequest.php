@@ -11,7 +11,7 @@ abstract class AbstractBaseRequest extends AbstractRequest
 {
     //POST請求URL【需要更新】
     protected $curlUrl = "https://uatopenapi.macaupay.com.mo/masl/umpg/gateway";
-    protected $curlUrlProd = "https://openapi.macaupay.com.mo/masl/umpg/gateway";
+    protected $curlUrlProd = "https://openapi.macaupay.com.mo/masl/v2/umpg/gateway";
     //表單請求URL【需要更新】
     protected $formUrl = "https://uatopenapi.macaupay.com.mo/scanpay/";
     protected $formUrlProd = "https://openapi.macaupay.com.mo/scanpay/v2/";
